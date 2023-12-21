@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer component {
+  .custom-gradient-1 {
+    @apply bg-gradient-to-r from-[#0c0a17] via-[#19045a] to-black;
+  }
+  .custom-gradient-2 {
+    @apply bg-gradient-to-r from-[#19045a] via-[#0c0a17] to-[#19045a];
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
+}
