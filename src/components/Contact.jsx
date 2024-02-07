@@ -21,9 +21,7 @@ const Contact = () => {
                   Get in touch with us
                 </h1>
                 <p className="text-stone-300 text-[14px]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consequuntur sed ratione earum, error delectus porro facilis
-                  non, minus deserunt placeat, eaque et est?
+                Got Questions ? <br />We're here to help and answer any questions you may have.
                 </p>
               </div>
 
@@ -64,7 +62,7 @@ const Contact = () => {
                     <h1 className="text-white text-xl font-semibold font-Onest">
                       Email Address
                     </h1>
-                    <p className="text-stone-300">ecell.ternaengg.ac.in</p>
+                    <p className="text-stone-300">ecell@ternaengg.ac.in</p>
                   </div>
                 </div>
               </div>

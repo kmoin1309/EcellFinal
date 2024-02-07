@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import EventCard from '../components/EventCard';
 import {accelarationIncubation,
     angelInvestment,
     designThinking,
@@ -16,25 +17,15 @@ import {accelarationIncubation,
     report2,
     report4,} from "../assets";
 import { Link } from 'react-router-dom';
-import EventCard from '../components/EventCard';
 
 function Eventpage() {
 
-
-
     const [Year, setyear] = useState("2022");
-    const [input,setInput]=useState("");
 
     const handleClick = (e)=>{
         const filterYear=e.currentTarget.id;
+        console.log(filterYear);
         setyear(filterYear);
-    }
-
-
-    const handleSubmit=(e)=>{
-        e.preventDefault();
-        setyear(input);
-        setInput("");
     }
 
     const YearApi = [
@@ -205,23 +196,21 @@ function Eventpage() {
                         }
                         </div>
                         <li>
-                            <form  onSubmit={handleSubmit}>
+                            <form action="">
                                 <div className="border-2 rounded-full overflow-hidden flex mt-4">
-                                    <input type="text" className="px-2 py-2 md:px-4 bg-transparent" placeholder="Search..." value={input} onChange={(e)=>setInput(e.target.value)} />
-                                    {/* <button className="flex items-center justify-center px-4 border-l" type="submit">
+                                    <input type="text" className="px-2 py-2 md:px-4 bg-transparent" placeholder="Search..." />
+                                    <button className="flex items-center justify-center px-4 border-l">
                                         <svg className="h-4 w-4 text-grey-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                             <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
                                         </svg>
-                                    </button> */}
+                                    </button>
                                 </div>
                             </form>
                         </li>
                     </ul>
                 </div>
                 {
-                    EventDetials.filter((item)=>(
-                        input.toLowerCase() === '' ? item : item.title.toLowerCase().includes(input)
-                    )).map((event) => (
+                    EventDetials.map((event) => (
                         event.eventyear == Year ? <EventCard key={event.id} {...event} /> : null
                     ))
                 }

@@ -14,42 +14,46 @@ const TillNow = () => {
           Till Now
         </h1>
 
-        <div className="flex flex-col gap-10 justify-center items-center md:flex-row">
-          <div className="flex w-full gap-4">
-            <div className="w-32">
+        <div className="flex flex-col justify-center items-center md:flex-row">
+          <div className="flex">
+          <div className="flex w-full gap-4 align-baseline">
+            <div className="w-16 md:w-32">
               <Lottie animationData={Colleges} />
             </div>
             <div className="flex w-full text-white flex-col justify-center gap-1">
-              <h1 className="text-5xl font-semibold"><CounterAnimation targetValue={380}/>+</h1>
+              <h1 className="text-3xl font-semibold md:text-5xl"><CounterAnimation targetValue={380}/>+</h1>
               <p className="text-md text-stone-200 ml-2">Colleges</p>
             </div>
           </div>
           <div className="flex w-full gap-4">
-            <div className="w-32">
+            <div className="w-16 md:w-32">
               <Lottie animationData={Publications} />
             </div>
             <div className="flex w-full text-white flex-col justify-center gap-1">
-              <h1 className="text-5xl font-semibold"><CounterAnimation targetValue={400}/>+</h1>
+              <h1 className="text-3xl font-semibold md:text-5xl "><CounterAnimation targetValue={400}/>+</h1>
               <p className="text-md text-stone-200 ml-2">Publications</p>
             </div>
           </div>
+          </div>
+          <div className="flex">
           <div className="flex w-full gap-4">
-            <div className="w-32">
+            <div className="w-16 md:w-32">
               <Lottie animationData={Startups} />
             </div>
             <div className="flex w-full text-white flex-col justify-center gap-1">
-              <h1 className="text-5xl font-semibold"><CounterAnimation targetValue={170}/>+</h1>
+              <h1 className="text-3xl font-semibold md:text-5xl"><CounterAnimation targetValue={170}/>+</h1>
               <p className="text-md text-stone-200 ml-2">Startups</p>
             </div>
           </div>
           <div className="flex w-full gap-4">
-            <div className="w-32">
+            <div className="w-16 md:w-32">
               <Lottie animationData={Associates} />
             </div>
             <div className="flex w-full text-white flex-col justify-center gap-1">
-              <h1 className="text-5xl font-semibold"><CounterAnimation targetValue={310}/>+</h1>
+              <h1 className="text-3xl font-semibold md:text-5xl"><CounterAnimation targetValue={310}/>+</h1>
               <p className="text-md text-stone-200 ml-2">Associates</p>
             </div>
+          </div>
           </div>
         </div>
       </div>

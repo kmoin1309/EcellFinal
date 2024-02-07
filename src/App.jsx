@@ -8,6 +8,7 @@ import About from "./Pages/AboutOld";
 import Eventpage from "./Pages/Eventpage"
 import Eventslider from "./components/Eventslider"
 import TeamsPills from "./components/TeamsPills";
+import Register from "./Pages/Register";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/event" element={<Eventpage />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
 
     </>

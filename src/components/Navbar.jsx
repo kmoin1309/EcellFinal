@@ -23,6 +23,11 @@ export const navLinks = [
     title: "TEAM",
     link: "/team",
   },
+  {
+    id: "register",
+    title: "REGISTER",
+    link: "/register",
+  },
 ];
 
 const Navbar = () => {
@@ -82,6 +87,7 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
+
 
               {/* Mobile Navigation */}
               <div className="md:hidden flex flex-1 justify-end items-center">

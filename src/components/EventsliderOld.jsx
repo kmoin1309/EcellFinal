@@ -67,7 +67,7 @@ const Events = () => {
         </div>
 
         {/* content overlay */}
-        <div className='absolute md:top-[40%] md:left-[10%] md:w-[30%] bottom-[15%]  w-[100%] md:text-left text-white flex-col text-center'>
+        <div className='absolute md:top-[40%] md:left-[10%] md:w-[30%] bottom-[10%]  w-[100%] md:text-left text-white flex-col text-center'>
           <h1 className='my-3 text-2xl font-bold pl-2'>
             {slides[currentIndex].content}
           </h1>

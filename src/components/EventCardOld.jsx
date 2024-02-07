@@ -4,20 +4,18 @@ import { SlCalender } from "react-icons/sl";
 function EventCard({title,content,eventyear,imgUrl}) {
   return (
     <>
-    <div>
-{/* bg-[#2C1579] */}
-    <div className='flex flex-row justify-center font-sansm my-8 '>
-        <div className="flex flex-col md:flex-row md:w-[80%] w-[100%] h-[40%] justify-around  px-6 mb-10 rounded-lg ">
+      <div className='flex flex-row justify-center font-sansm my-8'>
+        <div className="flex flex-col md:flex-row md:w-[80%] w-[100%] h-[40%] justify-around  px-6 mb-10 rounded-lg">
 
           {/* left container */}
           <div className='my-2 relative'>
             {/* left image */}
-            <img src={imgUrl} alt="" className='md:w-[350px] md:h-[250px] w-[400px] h-[350px] rounded-md  md:brightness-100 ' />
+            <img src={imgUrl} alt="" className='md:w-[350px] md:h-[250px] w-[400px] h-[350px] rounded-md filter brightness-50 md:brightness-100 ' />
           </div>
 
 
           {/* right container */}
-          <div className='  md:static ml-2 md:w-[60%] text-white md:mr-10'>
+          <div className=' absolute md:static ml-2 md:w-[60%] text-white md:mr-10'>
             {/* right content */}
 
             <h1 className='text-4xl font-bold my-6'>{title}</h1>
@@ -41,8 +39,6 @@ function EventCard({title,content,eventyear,imgUrl}) {
 
         </div>
       </div>
-    </div>
-      
 
 
     </>

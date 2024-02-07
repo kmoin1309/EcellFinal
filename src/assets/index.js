@@ -91,6 +91,7 @@ import ShriyaMishra from "./Team/ShriyaMishra.jpg";
 import TanishkaUgale from "./Team/TanishkaUgale.jpg";
 import ChetanChaudhariV from "./Team/ChetanChaudhariV.jpg";
 import VardhiniSubramanium from './Team/VardhiniSubramanium.jpg';
+import VedantKadam from "./Team/VedantKadam.png";
 import VedantPatil from './Team/VedantPatil.jpg';
 import VidhiKumari from './Team/VidhiKumari.jpg';
 import VivekBilla from './Team/VivekBilla.jpg';
@@ -206,6 +207,7 @@ export {
       VardhiniSubramanium,
       VedantPatil,
       VidhiKumari,
+      VedantKadam,
       VivekBilla,
 
       accelarationIncubation,
