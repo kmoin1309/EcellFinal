@@ -104,7 +104,7 @@ import angelInvestment from './Events/angelInvestment.png';
 import designThinking from './Events/designThinking.png';
 import entSkills from './Events/entSkills.png';
 import igniteMeetUp from './Events/igniteMeetUp.png';
-import incubationVisit from './Events/incubationVisit.png';
+import incubationVisit from './Events/IncubationVisit.png';
 import innovationAndEnt from './Events/innovationAndEnt.png';
 import innovationDev from './Events/innovationDev.png';
 import posterLogo from './Events/posterLogo.png';
